@@ -65,7 +65,7 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	//{ run_command, " %s updates |",        "{ timeout 20 checkupdates 2>/dev/null || true; } | wc -l" },
+	{ run_command, " %s updates |",        "cat $HOME/pending_updates" },
 	{ cpu_perc, " \uf4bc %s%% | ",           NULL },
 	{ ram_perc, "\ue266 %s%% - ",          NULL },
 	{ ram_used, "%s | ",          NULL },
