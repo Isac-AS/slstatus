@@ -66,8 +66,8 @@ static const char unknown_str[] = "n/a";
 static const struct arg args[] = {
 	/* function format          argument */
 	{ run_command, " %s updates |",        "cat $HOME/pending_updates" },
-	{ cpu_perc, " \uf4bc %s%% | ",           NULL },
-	{ ram_perc, "\ue266 %s%% - ",          NULL },
+	{ cpu_perc, " %s%% | ",           NULL },
+	{ ram_perc, " %s%% - ",          NULL },
 	{ ram_used, "%s | ",          NULL },
 	{ datetime, "%s ",           "%d/%m/%Y | %H:%M:%S" },
 };
